@@ -19,7 +19,7 @@ public class ApiInterceptor implements HandlerInterceptor{
 	}
 
 	/**
-	 * 请求时
+	 * 请求执行
 	 */
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,

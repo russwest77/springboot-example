@@ -1,5 +1,8 @@
 package com.wondersgroup.store.user.action;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -55,5 +58,20 @@ public class SpringbootController {
 		System.out.println("...异常测试");
 		int i=1/0;
 		return "testException success ~";
+	}
+	
+	/**
+	 * freemarker模板测试
+	 * @return
+	 */
+	@RequestMapping("index")
+	public ModelAndView index(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("index");
+		List<String> userList=new ArrayList<String>();
+        userList.add("admin");
+        userList.add("1234");
+        modelAndView.addObject("userList", userList);
+		return modelAndView;
 	}
 }
