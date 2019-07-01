@@ -28,7 +28,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 public class WebExceptionAspect {
     
 	/**
-	 * 捕捉异常执行
+	 * 捕捉异常时执行
 	 * @return
 	 */
 	@ExceptionHandler(RuntimeException.class)
