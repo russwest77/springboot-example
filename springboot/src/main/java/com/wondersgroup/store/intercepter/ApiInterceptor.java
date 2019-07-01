@@ -6,6 +6,12 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
+/**
+ * 拦截器
+ * 
+ * @author oowangwang
+ *
+ */
 public class ApiInterceptor implements HandlerInterceptor{
 
 	/**
